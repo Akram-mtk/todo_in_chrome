@@ -1,0 +1,100 @@
+body{
+    margin: 0px;
+    height: 100vh;
+    background: #54BAB9;
+    font-family: system-ui;
+}
+
+.form_container{
+    position: fixed;
+    height: 10vh;
+    margin-top: 10px;
+    margin-left: 10px;
+    z-index: 2;
+}
+
+form{
+    top: 10px;
+    padding: 10px;
+    background: #18978F;
+    border-radius: 5px;
+    border-bottom-left-radius: 0px;
+}
+
+.task{
+    width: 70vw;
+    height: 30px;
+    font-size: 1.25rem;
+    background: #F7ECDE;
+    border: 2px solid #E9DAC1;
+    border-radius: 5px;
+}
+
+.confirme{
+    background: #16003B;
+    color: #839AA8;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+
+    position: relative;
+    top: -2px;
+}
+
+.confirme:hover{
+    cursor: pointer;
+}
+
+
+.fa-bars{
+    font-size: 2rem;
+    padding: 5px 12px;
+    color: #E9DAC1;
+    background: #18978F;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+
+.fa-bars:hover{
+    cursor: pointer;
+}
+
+
+.tasks{
+    position: relative;
+    top: 60px;
+    width: 80vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.todo{
+    background: #E9DAC1;
+    height: 2rem;
+    font-size: 1.25rem;
+    border-radius: 10px;
+    text-align: left;
+    justify-content: center;
+    margin: 15px;
+    padding: 5px 15px;
+}
+
+.delete{
+    float: right;
+    color: crimson;
+}
+
+.delete:hover{
+    cursor: pointer;
+}
+
+.the_task:hover{
+    cursor: pointer;
+}
+
+.done{
+    text-decoration: line-through;
+    opacity: 50%;
+}
