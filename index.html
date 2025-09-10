@@ -1,29 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Todo</title>
-    <link rel="stylesheet" href="style.css">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo App</title>
 
-    <script src="https://kit.fontawesome.com/857a46b50a.js" crossorigin="anonymous"></script><!--font-awesome-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script><!--jquiz-->
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/857a46b50a.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body class="bg-gray-900 text-gray-100 min-h-screen flex flex-col items-center font-sans">
 
-    <div class="form_container">
-        <form onsubmit="return false">
-            <input type="text" class="task">
-            <button class="confirme">ADD</button>
-        </form>
-        <div><i class="fa-solid fa-bars"></i></div>
-    </div>
+  <!-- Header / Input -->
+  <div class="fixed top-0 w-full flex justify-center items-center bg-gray-800 p-4 shadow-md z-10">
+    <form id="task-form" class="flex gap-3 w-full max-w-xl">
+      <input type="text" 
+             class="task flex-1 p-3 rounded-xl border border-gray-700 focus:ring-2 focus:ring-purple-500 focus:outline-none bg-gray-700 text-gray-100 placeholder-gray-400" 
+             placeholder="Add a new task...">
+      <button type="submit" 
+              class="confirme bg-purple-600 text-white px-5 py-2 rounded-xl shadow hover:bg-purple-700 transition">
+        ADD
+      </button>
+    </form>
+  </div>
 
+  <!-- Task List -->
+  <section class="tasks mt-28 w-full max-w-xl flex flex-col gap-4 px-4" id="c">
+    <!-- Tasks will be injected by JS -->
+  </section>
 
-    <section class="tasks" id="c">
-
-    </section>
-    
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
